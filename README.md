@@ -47,7 +47,7 @@ address instead of trying to extract it through any type of information
 leakage to simplify the attack.
 
 ```
-cd oracle/src/char_dev_kernel_module
+cd oracle.new/src/char_dev_kernel_module
 make
 gcc -o oracle oracle
 sudo insmod process_cred_oracle.ko
@@ -93,7 +93,7 @@ capability base address.
 **ON THE HOST:**
 ```
 ps aux | grep user_prog
-cd [path-to-repo]/oracle/src
+cd [path-to-repo]/oracle.new/src
 ./oracle [pid]
 ```
 Now we will pass the capability address to the running `user_prog` in the 
