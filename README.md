@@ -69,7 +69,7 @@ userspace program which was compiled and is available in the kernel-exploit
 folder.
 
 ```
-sudo docker save -o [path-to-repo]/cve.tar.gz cve:1.0
+sudo docker load -i [path-to-repo]/cve.tar.gz
 sudo docker run --security-opt seccomp=unconfined -v [path-to-repo]/kernel-exploit/:/home/user_space_program -v [path-to-repo]/linux-4.13/lib:/home/lkms -it cve:1.0 bash
 ```
 
